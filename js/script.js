@@ -8,7 +8,7 @@ let result = document.getElementById("result");
 let getMovie = function() {
 
     let movieName = movieNameRef.value;
-    let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
+    let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
     //IF input field is empty
     if (movieName.length == "") {
         result.innerHTML = `<h3 class="msg">Please Enter a Movie Name</h3>`;
